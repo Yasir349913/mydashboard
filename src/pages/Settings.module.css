@@ -1,0 +1,58 @@
+.container {
+  padding: 24px;
+  background-color: #fff;
+  color: #333;
+  min-height: calc(100vh - 60px);
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dark {
+  background-color: #120f2d;
+  color: #eee;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.description {
+  font-size: 1rem;
+  margin-bottom: 24px;
+  color: #666;
+}
+
+.dark .description {
+  color: #bbb;
+}
+
+.settingItem {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.settingItem label {
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.settingItem input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+.settingItem select {
+  width: 150px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.dark .settingItem select {
+  background-color: #2d2454;
+  color: #eee;
+  border-color: #555;
+}

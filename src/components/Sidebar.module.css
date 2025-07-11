@@ -1,0 +1,230 @@
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 260px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  background-color: inherit;
+  color: inherit;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  z-index: 1000;
+  transition: transform 0.3s ease, width 0.3s ease;
+}
+
+/* Below 800px - hide sidebar by default */
+@media (max-width: 800px) {
+  .sidebar {
+    transform: translateX(-100%);
+    position: fixed;
+    width: 75%;
+    max-width: 250px;
+    height: 100vh;
+    box-shadow: 2px 0 12px rgba(0, 0, 0, 0.4);
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+}
+
+/* Hamburger Button */
+.hamburger {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  width: 30px;
+  height: 25px;
+  z-index: 1100;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  color: inherit;
+}
+
+.hamburger div {
+  height: 3px;
+  background-color: currentColor;
+  border-radius: 3px;
+}
+
+/* Show hamburger only on small screens */
+@media (max-width: 800px) {
+  .hamburger {
+    display: flex;
+  }
+}
+
+/* Logo */
+.logo {
+  width: 100%;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* Navigation */
+.nav {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.navItem {
+  text-decoration: none;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: background 0.2s, opacity 0.5s ease, transform 0.5s ease;
+}
+
+.navItem.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.navItem:hover {
+  background-color: #2c2a4d;
+}
+
+/* Dark Mode Toggle */
+.darkModeToggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+  background-color: #2d2454;
+  padding: 8px 12px;
+  border-radius: 18px;
+  font-size: 13px;
+  color: inherit;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.darkModeToggle.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Toggle Switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 42px;
+  height: 22px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 34px;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #4caf50;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+/* Avatar Section */
+.avatarBox {
+  margin-top: auto;
+  text-align: center;
+  padding: 15px 0 8px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.avatarBox.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.avatarCard {
+  border-radius: 10px;
+  padding: 8px;
+  margin: 8px auto;
+  width: 80%;
+  background-color: #eee;
+}
+
+.avatar {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  margin-bottom: 8px;
+  object-fit: cover;
+}
+
+.avatarText p {
+  margin: 1px 0;
+  font-size: 11px;
+  line-height: 1.2;
+}
+
+/* Chat Now Button */
+.chatNow {
+  background-color: #ff5b8c;
+  border: none;
+  padding: 8px 18px;
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.chatNow:hover {
+  background-color: #ff3f75;
+}

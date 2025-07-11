@@ -1,0 +1,156 @@
+.card {
+  display: flex;
+  align-items: flex-start;
+  border-radius: 16px;
+  padding: 20px 25px;
+  margin: 100px auto 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 1000px;
+  box-sizing: border-box;
+  gap: 20px;
+  transition: all 0.3s ease;
+  background-color: inherit;
+  color: inherit;
+  overflow-wrap: break-word;
+}
+.left {
+  flex-shrink: 0;
+}
+
+.fox {
+  width: 80px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: contain;
+}
+
+.right {
+  flex: 1;
+  color: inherit;
+}
+
+.right h3 {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+  color: inherit;
+}
+
+.right p {
+  margin: 0 0 16px 0;
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1.4;
+}
+
+.searchBox {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  padding: 8px 14px;
+  gap: 10px;
+  flex-wrap: nowrap;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: background-color 0.3s ease;
+  margin-top: 12px;
+}
+
+.searchBox input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  outline: none;
+  color: inherit;
+  font-size: 14px;
+  min-width: 0;
+}
+
+.icon {
+  font-size: 16px;
+  cursor: pointer;
+  color: #ff5b8c;
+  flex-shrink: 0;
+}
+
+/* ---------------- Responsive: Tablets & Smaller ---------------- */
+@media (max-width: 850px) {
+  .card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 16px 20px;
+    gap: 14px;
+    margin: 90px auto 16px;
+  }
+
+  .left {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .fox {
+    width: 70px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .right {
+    width: 100%;
+  }
+
+  .right h3 {
+    font-size: 17px;
+  }
+
+  .right p {
+    font-size: 13px;
+    color: #bbb;
+  }
+
+  .searchBox {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+    padding: 10px;
+  }
+
+  .icon {
+    align-self: flex-end;
+  }
+}
+@media (max-width: 800px) {
+  .card {
+    margin: 140px auto 20px; /* increase top space for taller topBar */
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    margin: 160px auto 16px; /* even more space for small phones */
+  }
+}
+
+/* ---------------- Extra Small Screens ---------------- */
+@media (max-width: 480px) {
+  .fox {
+    width: 50px;
+  }
+
+  .right h3 {
+    font-size: 15px;
+  }
+
+  .right p {
+    font-size: 12px;
+  }
+
+  .searchBox input {
+    font-size: 13px;
+  }
+
+  .icon {
+    font-size: 14px;
+  }
+}

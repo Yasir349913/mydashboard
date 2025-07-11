@@ -1,0 +1,44 @@
+.container {
+  padding: 24px;
+  background-color: #fff;
+  color: #333;
+  min-height: calc(100vh - 60px);
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dark {
+  background-color: #120f2d;
+  color: #eee;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.description {
+  font-size: 1rem;
+  margin-bottom: 24px;
+  color: #666;
+}
+
+.dark .description {
+  color: #bbb;
+}
+
+.chartPlaceholder {
+  height: 300px;
+  border: 2px dashed #ccc;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #999;
+}
+
+.dark .chartPlaceholder {
+  border-color: #555;
+  color: #aaa;
+}
