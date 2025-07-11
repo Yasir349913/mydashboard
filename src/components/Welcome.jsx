@@ -1,11 +1,11 @@
 import React, { useContext, useEffect, useRef } from "react";
-import styles from "./Welcomecard.module.css";
+import styles from "./Welcome.module.css";
 import { FaSearch, FaMicrophone } from "react-icons/fa";
 import img1 from "../assets/images/fox.webp";
 import { ThemeContext } from "../assets/store/Themecontext";
 import { gsap } from "gsap";
 
-const WelcomeCard = () => {
+const Welcome = () => {
   const { darkMode } = useContext(ThemeContext);
   const cardRef = useRef(null);
 
@@ -78,4 +78,4 @@ const WelcomeCard = () => {
   );
 };
 
-export default WelcomeCard;
+export default Welcome;

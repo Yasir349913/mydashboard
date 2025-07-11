@@ -1,5 +1,5 @@
 import React from "react";
-import WelcomeCard from "../components/Welcomecard";
+import Welcome from "../components/Welcome";
 import BarChart from "../components/Barchart";
 import CoursesSection from "../components/CoursesSection";
 
