@@ -6,7 +6,7 @@ import CoursesSection from "../components/CoursesSection.jsx";
 const Dashboard = () => {
   return (
     <>
-      <WelcomeCard />
+      <Welcome />
       <BarChart />
       <CoursesSection />
     </>
