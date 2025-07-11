@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import styles from "./BarChart.module.css";
+import styles from "./Barchart.module.css";
 import { ThemeContext } from "../assets/store/Themecontext";
 
 const BarChart = () => {
