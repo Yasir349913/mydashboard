@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useRef } from "react";
-import styles from "./WelcomeCard.module.css";
+import styles from "./Welcomecard.module.css";
 import { FaSearch, FaMicrophone } from "react-icons/fa";
 import img1 from "../assets/images/fox.webp";
 import { ThemeContext } from "../assets/store/Themecontext";

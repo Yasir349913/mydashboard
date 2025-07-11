@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import styles from "./TopBar.module.css";
+import styles from "./Topbar.module.css";
 import { FaSearch, FaQuestionCircle } from "react-icons/fa";
 import { ThemeContext } from "../assets/store/Themecontext";
 
