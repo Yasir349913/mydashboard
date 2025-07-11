@@ -3,7 +3,7 @@ import styles from "./WelcomeCard.module.css";
 import { FaSearch, FaMicrophone } from "react-icons/fa";
 import img1 from "../assets/images/fox.webp";
 import { ThemeContext } from "../assets/store/Themecontext";
-import gsap from "gsap";
+import { gsap } from "gsap";
 
 const WelcomeCard = () => {
   const { darkMode } = useContext(ThemeContext);
