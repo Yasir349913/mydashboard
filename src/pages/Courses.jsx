@@ -1,5 +1,5 @@
 import React from "react";
-import CoursesSection from "../components/CoursesSection";
+import CoursesSection from "../components/CoursesSection.jsx";
 
 const Courses = () => {
   return (

@@ -1,5 +1,6 @@
 import React, { useState, useContext, useEffect, useRef } from "react";
 import { Card, Row, Col } from "react-bootstrap";
+import styles from "./CoursesSection.module.css";
 import {
   FaCode,
   FaRobot,
@@ -9,7 +10,7 @@ import {
   FaArrowRight,
 } from "react-icons/fa";
 import { BiChevronLeft, BiChevronRight } from "react-icons/bi";
-import styles from "./CoursesSection.module.css";
+
 import { ThemeContext } from "../assets/store/Themecontext";
 import { gsap } from "gsap";
 
