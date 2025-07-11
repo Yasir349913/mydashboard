@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import styles from "./RightSidebar.module.css";
+import styles from "./Rightsidebar.module.css";
 import {
   FaFlask,
   FaCode,
